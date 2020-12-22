@@ -13,6 +13,10 @@
 		14F6899F258B9F8C00E9431E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F6899D258B9F8C00E9431E /* Main.storyboard */; };
 		14F689A1258B9F8D00E9431E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F689A0258B9F8D00E9431E /* Assets.xcassets */; };
 		14F689A4258B9F8D00E9431E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F689A2258B9F8D00E9431E /* LaunchScreen.storyboard */; };
+		14F689B42590DA1300E9431E /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14F689B32590DA1300E9431E /* Settings.plist */; };
+		14F689B72590FDF000E9431E /* PlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F689B62590FDF000E9431E /* PlistViewController.swift */; };
+		14F689BC2592222900E9431E /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F689BB2592222900E9431E /* UserDefaultsViewController.swift */; };
+		14F689C025922ED300E9431E /* iCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F689BF25922ED300E9431E /* iCloudViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		14F689A3258B9F8D00E9431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14F689A5258B9F8D00E9431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F689AC258FA60A00E9431E /* Spark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spark.entitlements; sourceTree = "<group>"; };
+		14F689B32590DA1300E9431E /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		14F689B62590FDF000E9431E /* PlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistViewController.swift; sourceTree = "<group>"; };
+		14F689BB2592222900E9431E /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
+		14F689BF25922ED300E9431E /* iCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,10 @@
 				14F689A0258B9F8D00E9431E /* Assets.xcassets */,
 				14F689A2258B9F8D00E9431E /* LaunchScreen.storyboard */,
 				14F689A5258B9F8D00E9431E /* Info.plist */,
+				14F689B32590DA1300E9431E /* Settings.plist */,
+				14F689B62590FDF000E9431E /* PlistViewController.swift */,
+				14F689BB2592222900E9431E /* UserDefaultsViewController.swift */,
+				14F689BF25922ED300E9431E /* iCloudViewController.swift */,
 			);
 			path = Spark;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F689A4258B9F8D00E9431E /* LaunchScreen.storyboard in Resources */,
+				14F689B42590DA1300E9431E /* Settings.plist in Resources */,
 				14F689A1258B9F8D00E9431E /* Assets.xcassets in Resources */,
 				14F6899F258B9F8C00E9431E /* Main.storyboard in Resources */,
 			);
@@ -140,8 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F6899C258B9F8C00E9431E /* ViewController.swift in Sources */,
+				14F689BC2592222900E9431E /* UserDefaultsViewController.swift in Sources */,
+				14F689C025922ED300E9431E /* iCloudViewController.swift in Sources */,
 				14F68998258B9F8C00E9431E /* AppDelegate.swift in Sources */,
 				14F6899A258B9F8C00E9431E /* SceneDelegate.swift in Sources */,
+				14F689B72590FDF000E9431E /* PlistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
