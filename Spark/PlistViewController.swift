@@ -41,9 +41,6 @@ class PlistViewController: UIViewController {
             .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
             .appendingPathComponent("Settings.plist")
         
-        print(bundledSettingsURL.path)
-        print(settingsURL.path)
-        
         // Copy plist to document directory if it doesn't already exist
         if FileManager.default.fileExists(atPath: settingsURL.path) == false {
             try! FileManager.default.copyItem(at: bundledSettingsURL, to: settingsURL)
