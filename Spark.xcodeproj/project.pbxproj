@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14BBF28625979DAD00CC9384 /* SQLiteFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BBF28525979DAD00CC9384 /* SQLiteFunctions.swift */; };
+		14BBF28C25979F6300CC9384 /* Spark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14BBF28A25979F6300CC9384 /* Spark.xcdatamodeld */; };
+		14BBF28F25979F8100CC9384 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BBF28E25979F8100CC9384 /* CoreDataStack.swift */; };
+		14BBF2942597A1E800CC9384 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BBF2932597A1E800CC9384 /* CloudKit.framework */; };
 		14F68998258B9F8C00E9431E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F68997258B9F8C00E9431E /* AppDelegate.swift */; };
 		14F6899A258B9F8C00E9431E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F68999258B9F8C00E9431E /* SceneDelegate.swift */; };
 		14F6899C258B9F8C00E9431E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F6899B258B9F8C00E9431E /* ViewController.swift */; };
@@ -20,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14BBF28525979DAD00CC9384 /* SQLiteFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteFunctions.swift; sourceTree = "<group>"; };
+		14BBF28925979DF700CC9384 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		14BBF28B25979F6300CC9384 /* Spark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spark.xcdatamodel; sourceTree = "<group>"; };
+		14BBF28E25979F8100CC9384 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		14BBF2932597A1E800CC9384 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		14F68994258B9F8C00E9431E /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F68997258B9F8C00E9431E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F68999258B9F8C00E9431E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,17 +49,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BBF2942597A1E800CC9384 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14BBF28425979D8500CC9384 /* Data Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				14BBF28525979DAD00CC9384 /* SQLiteFunctions.swift */,
+				14BBF28A25979F6300CC9384 /* Spark.xcdatamodeld */,
+				14BBF28E25979F8100CC9384 /* CoreDataStack.swift */,
+			);
+			path = "Data Persistence";
+			sourceTree = "<group>";
+		};
+		14BBF28825979DF700CC9384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14BBF2932597A1E800CC9384 /* CloudKit.framework */,
+				14BBF28925979DF700CC9384 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		14F6898B258B9F8C00E9431E = {
 			isa = PBXGroup;
 			children = (
 				14F68996258B9F8C00E9431E /* Spark */,
 				14F68995258B9F8C00E9431E /* Products */,
+				14BBF28825979DF700CC9384 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +95,7 @@
 		14F68996258B9F8C00E9431E /* Spark */ = {
 			isa = PBXGroup;
 			children = (
+				14BBF28425979D8500CC9384 /* Data Persistence */,
 				14F689AC258FA60A00E9431E /* Spark.entitlements */,
 				14F68997258B9F8C00E9431E /* AppDelegate.swift */,
 				14F68999258B9F8C00E9431E /* SceneDelegate.swift */,
@@ -154,6 +185,9 @@
 			files = (
 				14F6899C258B9F8C00E9431E /* ViewController.swift in Sources */,
 				14F689BC2592222900E9431E /* UserDefaultsViewController.swift in Sources */,
+				14BBF28625979DAD00CC9384 /* SQLiteFunctions.swift in Sources */,
+				14BBF28F25979F8100CC9384 /* CoreDataStack.swift in Sources */,
+				14BBF28C25979F6300CC9384 /* Spark.xcdatamodeld in Sources */,
 				14F689C025922ED300E9431E /* iCloudViewController.swift in Sources */,
 				14F68998258B9F8C00E9431E /* AppDelegate.swift in Sources */,
 				14F6899A258B9F8C00E9431E /* SceneDelegate.swift in Sources */,
@@ -360,6 +394,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		14BBF28A25979F6300CC9384 /* Spark.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				14BBF28B25979F6300CC9384 /* Spark.xcdatamodel */,
+			);
+			currentVersion = 14BBF28B25979F6300CC9384 /* Spark.xcdatamodel */;
+			path = Spark.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 14F6898C258B9F8C00E9431E /* Project object */;
 }
